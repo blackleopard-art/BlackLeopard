@@ -1,9 +1,9 @@
 # **BlackLeopard**
-### Contains various page table resolution options in preparation for a GPU DMA attack. This repository utilizes the **PTEditor** repository: https://github.com/misc0110/PTEditor ###
+### Contains various page table resolution options in preparation for a GPU DMA attack. This repository utilizes **PTEditor**: https://github.com/misc0110/PTEditor ###
 
-### All functions included in `pteditor.h` are defined in PTEditor repository. The functions documented in this repository are just a few of the pertinant functions necessary for this project. ###
+### All functions included in `pteditor.h` are defined in the PTEditor repository. The functions documented in this repository are just a few of the pertinant functions necessary for this project. ###
 
-### A ***cuda*** file will be uploaded in short time. This will be the controller process that would take the physical addresses, and read thier contents through DMA. ###
+### A ***cuda*** file will be uploaded in short time. This process would run on the GPU, avoiding detection from any CPU analysis tools. This controller process would take a range of physical addresses found with `possible_buffers`, and read thier contents through DMA. ###
 
 # Project Files
 
