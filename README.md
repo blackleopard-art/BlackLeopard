@@ -19,9 +19,11 @@ GPU controller process to perform Direct Memory Access and retrieve the value of
 
 `./read_address` 
 
-    Enter the target virtual addres: <virtual address (0x1234abcd)>
+    Enter the address of the target:   <virtual address (0x1234abcd)>
 
-    Enter the target pid: <pid (1234)>
+    Enter the pid of the target:       <pid (1234)>
+
+  
 
 - This takes the ***pid*** of a target process and the ***virtual address*** that stores the desired content (password string, keys, etc.)
 This resolves the page table entry of the virtual address, calculates the physical address and page frame number, and maps it to its own process 
