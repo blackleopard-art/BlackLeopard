@@ -1,4 +1,4 @@
-# **BlackLeopard 0.1**
+# **BlackLeopard 0.1.2**
 ### Contains various page table resolution options in preparation for a GPU DMA attack. This repository utilizes **PTEditor**: https://github.com/misc0110/PTEditor ###
 
 ### All functions included in `pteditor.h` are defined in the PTEditor repository. The functions documented in this repository are just a few of the pertinant functions necessary for this project. ###
