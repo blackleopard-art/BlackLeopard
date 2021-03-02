@@ -17,7 +17,11 @@ GPU controller process to perform Direct Memory Access and retrieve the value of
 
 ### ***read_address***     
 
-`./read_address <pid (1234)> <virtual address (0x1234abcd)>`
+`./read_address` 
+
+**`Enter the target virtual addres:`** *`<virtual address (0x1234abcd)>`*
+
+**`Enter the target pid:`** *`<pid (1234)>`*
 
 - This takes the ***pid*** of a target process and the ***virtual address*** that stores the desired content (password string, keys, etc.)
 This resolves the page table entry of the virtual address, calculates the physical address and page frame number, and maps it to its own process 
@@ -45,7 +49,7 @@ Navigate to either *possible_buffers* or *read_address*
 
 `./possible_buffers <pid>`
 
-`./read_address <pid> <address>`
+`./read_address`
 
 
 # **Key Functionality**
@@ -87,7 +91,7 @@ The TLB for the given address is flushed after updating the entries.
 
 `pid` The pid of the process (0 for own process)
 
-`vm` A structure containing the values for the page-table entries and a bitmask indicating which entries to update. Obtained using `pte_resolve(`
+`vm` A structure containing the values for the page-table entries and a bitmask indicating which entries to update. Obtained using `ptedit_resolve(void * address, pid_t pid)`
 
 
 ___
