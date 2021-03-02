@@ -58,8 +58,8 @@ int main(int argc, char *argv[]) {
     printf(TAG_OK "Physical pfn: %ld\n", phys_pfn);
     void *access = ptedit_pmap(phys, phys_pfn);
     volatile char **str = access;
-    //printf(TAG_OK "address[0] = " COLOR_YELLOW "%s" COLOR_RESET "\n", *(volatile char*)access);
-    printf(TAG_OK "address[0] = " COLOR_YELLOW "%s" COLOR_RESET "\n", (char *)str);
+    //printf(TAG_OK "address[0] = " COLOR_YELLOW "%c" COLOR_RESET "\n", *(volatile char*)access); //for a single character
+    printf(TAG_OK "address[0] = " COLOR_YELLOW "%s" COLOR_RESET "\n", (char *)str);  //for a string
 
 
 
