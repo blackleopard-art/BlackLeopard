@@ -1,5 +1,5 @@
 # BlackLeopard
-### Contains various page table resolution options in preparation of a GPU DMA attack. This repository utilizes the **PTEditor** repository: https://github.com/misc0110/PTEditor
+### Contains various page table resolution options in preparation for a GPU DMA attack. This repository utilizes the **PTEditor** repository: https://github.com/misc0110/PTEditor
 
 ### All functions included in `pteditor.h` are defined in PTEditor repository. The functions below are just a few of the pertinant functions.
 
@@ -44,7 +44,7 @@ Navigate to either *possible_buffers* or *read_address*
 `./read_address <pid> <address>`
 
 
-#Key Functionality
+# Key Functionality
 
 ## `ptedit_entry_t ptedit_resolve(void * address, pid_t pid)`
 
@@ -61,7 +61,7 @@ Returns A structure containing the ***page-table entries*** of all levels.
 ___
 
 
- ## `int ptedit_get_pagesize()` 
+ ## `int` `ptedit_get_pagesize()` 
 
 Returns the default *page size* of the system
 
@@ -71,7 +71,7 @@ ___
 
 
 
-## `void ptedit_update(void * address,pid_t pid, ptedit_entry_t * vm)` 
+## `void` `ptedit_update(void * address,pid_t pid, ptedit_entry_t * vm)` 
 
 Updates one or more page-table entries for a virtual address of a given process. 
 
@@ -89,7 +89,7 @@ The TLB for the given address is flushed after updating the entries.
 ___
 
 
-##  `size_t ptedit_pte_get_pfn(void * address, pid_t pid)` 
+##  `size_t` `ptedit_pte_get_pfn(void * address, pid_t pid)` 
 
 Reads the PFN directly from the PTE of an address.
 
@@ -105,7 +105,7 @@ Returns *The page-frame number* (PFN)
 ___
 
 
- ## `size_t ptedit_get_pfn(size_t entry)` 
+ ## `size_t` `ptedit_get_pfn(size_t entry)` 
 
 Returns the *page-frame number (PFN)* of a page-table entry.
 
@@ -118,7 +118,7 @@ Returns the *page-frame number (PFN)* of a page-table entry.
 Returns The *page-frame number*
 ___
 
-## `void ptedit_read_physical_page(size_t pfn,char * buffer)` 
+## `void` `ptedit_read_physical_page(size_t pfn,char * buffer)` 
 
 Retrieves the content of a physical page.
 
@@ -130,7 +130,7 @@ Retrieves the content of a physical page.
 
 ___
 
-## `void * ptedit_pmap(size_t physical, size_t pfn)`
+## `void * ` `ptedit_pmap(size_t physical, size_t pfn)`
 
 Map a physical address range to the virtual address space.
 
@@ -146,7 +146,7 @@ Returns A *virtual address* that can be used to access the physical address.
 
 ___
 
-## `size_t ptedit_get_paging_root(pid_t pid)`
+## `size_t` `ptedit_get_paging_root(pid_t pid)`
 
 Returns the *root* of the paging structure (i.e., CR3 on x86 and TTBR0 on ARM).
 
@@ -158,7 +158,7 @@ Returns The ***phyiscal address*** (not PFN!) of the first page table (i.e., the
 
 ___
 
-## `void ptedit_print_entry(size_t entry)`
+## `void` `ptedit_print_entry(size_t entry)`
 
 Pretty prints a page-table entry.
 
