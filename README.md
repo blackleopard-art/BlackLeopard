@@ -130,7 +130,7 @@ Retrieves the content of a physical page.
 
 ___
 
-### `void * ` `ptedit_pmap(size_t physical, size_t pfn)`
+### `void *` `ptedit_pmap(size_t physical, size_t pfn)`
 
 Map a physical address range to the virtual address space.
 
