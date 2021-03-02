@@ -31,7 +31,7 @@ The GPU controller process is needed in order to read the physical address after
 
 Navigate to the the **src** directory. Must run as root.
 
-'sudo su'
+`sudo su`
 
 `make`
 
