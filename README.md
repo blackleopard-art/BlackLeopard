@@ -19,7 +19,7 @@ GPU controller process to perform Direct Memory Access and retrieve the value of
 
 `./read_address <pid (1234)> <virtual address (0x1234abcd)>`
 
-- This takes the ***pid*** of a target process and the ***virtual address** that contained the desired content (password, keys, etc.)
+- This takes the ***pid*** of a target process and the ***virtual address*** that stores the desired content (password string, keys, etc.)
 This resolves the page table entry of the virtual address, takes the variables physical address, and maps it to its own process 
 address space with **`void * ptedit_pmap(size_t physical, size_t pfn)`**. This can only be done while the target process is running. 
 The GPU controller process is needed in order to read the physical address after the target process is killed. 
