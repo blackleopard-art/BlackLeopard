@@ -27,7 +27,7 @@ The GPU controller process is needed in order to read the physical address after
 - Contains the kernel module that must be loaded in order to run `possible_buffer` and `read_address`. Also contains the
 `pteditor.h` file.
 
-# **Installation/Run**
+# **Compilation/Run**
 
 Navigate to the the **src** directory.
 
