@@ -1,4 +1,4 @@
-# **BlackLeopard 0.1.2**
+# **BlackLeopard 0.1.3**
 ### Contains various page table resolution options in preparation for a GPU DMA attack. This repository utilizes **PTEditor**: https://github.com/misc0110/PTEditor ###
 
 ### All functions included in `pteditor.h` are defined in the PTEditor repository. The functions documented in this repository are just a few of the pertinant functions necessary for this project. ###
@@ -19,9 +19,9 @@ GPU controller process to perform Direct Memory Access and retrieve the value of
 
 `./read_address` 
 
-**`Enter the target virtual addres:`** *`<virtual address (0x1234abcd)>`*
+    Enter the target virtual addres: <virtual address (0x1234abcd)>
 
-**`Enter the target pid:`** *`<pid (1234)>`*
+    Enter the target pid: <pid (1234)>
 
 - This takes the ***pid*** of a target process and the ***virtual address*** that stores the desired content (password string, keys, etc.)
 This resolves the page table entry of the virtual address, calculates the physical address and page frame number, and maps it to its own process 
