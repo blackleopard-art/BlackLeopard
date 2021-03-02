@@ -29,11 +29,13 @@ The GPU controller process is needed in order to read the physical address after
 
 # **Compile/Run**
 
-Navigate to the the **src** directory.
+Navigate to the the **src** directory. Must run as root.
 
-`sudo make`
+'sudo su'
 
-`sudo insmod pteditor.ko`
+`make`
+
+`insmod pteditor.ko`
 
 Navigate to either *possible_buffers* or *read_address*
 
