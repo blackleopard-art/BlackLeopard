@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 #include <ptedit_header.h>
 
 #define COLOR_RED "\x1b[31m"
@@ -27,8 +26,8 @@ int main(int argc, char *argv[]) {
       return 1;
     }
 
-    void *target;
-    int target_pid;
+    void *target; //= argv[2];
+    int target_pid; //= atoi(argv[1]);
     printf("Enter the address of the target: ");
     scanf("%p", &target);
     printf("\nEnter the pid of the target: ");
