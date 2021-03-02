@@ -46,7 +46,7 @@ Navigate to either *possible_buffers* or *read_address*
 
 # **Key Functionality**
 
-### `ptedit_entry_t ptedit_resolve(void * address, pid_t pid)`
+### `ptedit_entry_t` `ptedit_resolve(void * address, pid_t pid)`
 
 Resolves the page-table entries of all levels for a virtual address of a given process.
 
